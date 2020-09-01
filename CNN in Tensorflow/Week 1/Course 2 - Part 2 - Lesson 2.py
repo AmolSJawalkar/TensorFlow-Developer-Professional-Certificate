@@ -23,7 +23,7 @@ model.add(keras.layers.Dense(units=1, activation='sigmoid'))
 model.compile(optimizer=keras.optimizers.RMSprop(), loss=keras.losses.binary_crossentropy, metrics=['accuracy'])
 
 # Preprocess the input images
-sourcedir = 'data/cats_and_dogs_filtered'
+sourcedir = '../data/cats_and_dogs_filtered'
 imageDataGenerator = keras.preprocessing.image.ImageDataGenerator(rescale=1.0 / 255.0)
 trainDataGenerator = imageDataGenerator.flow_from_directory(
     sourcedir + '/train',

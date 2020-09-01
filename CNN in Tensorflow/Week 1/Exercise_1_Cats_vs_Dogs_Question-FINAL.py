@@ -24,9 +24,9 @@ def splitdata(sourcedir, traindir, testdir, splitratio):
 
 
 print("Splitting the data into train and validation")
-sourcedir = 'data/PetImages/Cat'
-traindir = 'data/cats_and_dogs/train'
-testdir = 'data/cats_and_dogs/valid'
+sourcedir = '../data/PetImages/Cat'
+traindir = '../data/cats_and_dogs/train'
+testdir = '../data/cats_and_dogs/valid'
 splitdata(sourcedir, traindir + '/cats', testdir + '/cats', 0.9)
 splitdata(sourcedir, traindir + '/dogs', testdir + '/dogs', 0.9)
 print("Split complete")
